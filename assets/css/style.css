@@ -1,0 +1,17 @@
+.task {
+    list-style: none;
+    width: 50%;
+    margin: auto;
+    border: 1px solid black;
+    font-size: 100%;
+}
+
+.toDoList {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.task-title {
+    font-size: 100%;
+}
