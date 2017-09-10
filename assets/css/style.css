@@ -1,9 +1,12 @@
 .task {
+    font-size: 200%;
     list-style: none;
-    width: 50%;
+    width: 40%;
     margin: auto;
-    border: 1px solid black;
-    font-size: 100%;
+    border-bottom: .25px solid lightgrey;
+    border-top: .25px solid lightgrey;
+    border-left: .5px solid lightgrey;
+    border-right: .5px solid lightgrey;
 }
 
 .toDoList {
@@ -13,5 +16,33 @@
 }
 
 .task-title {
-    font-size: 100%;
+    display: inline-block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.task-glyph {
+}
+
+.title {
+    margin: 0 auto;
+    font-size: 250%;
+}
+
+.main {
+    text-align: center;
+}
+
+.newTask {
+    font-size: 200%;
+    width: 40%;
+    margin: auto;
+    border-top: .5px solid lightgrey;
+    border-bottom: .25px solid lightgrey;
+    border-left: .5px solid lightgrey;
+    border-right: .5px solid lightgrey;
+}
+
+.glyphicon-remove {
+    margin-left: 3%;
 }

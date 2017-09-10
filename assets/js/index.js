@@ -1,14 +1,17 @@
-var React = require('react')
-var ReactDOM = require('react-dom')
+import React from 'react';
+import ReactDOM from 'react-dom'
+import ToDoList from './toDoList'
 
-var Hello = React.createClass({
-    render: function() {
+export default class App extends React.Component {
+
+    render() {
         return (
-            <h1>
-            Hello World!
-            </h1>
-        )
+            <div className='main'>
+                <p className='title'>To-do List App</p>
+                <ToDoList />
+            </div>
+        );
     }
-})
+}
 
-ReactDOM.render(<Hello />, document.getElementById('container'))
+ReactDOM.render(<App />, document.getElementById('container'));

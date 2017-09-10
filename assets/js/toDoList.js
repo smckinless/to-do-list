@@ -10,11 +10,11 @@ export default class ToDoList extends React.Component {
     }
 
     callServer() {
+        /* Get all tasks from API */
         $.ajax({
-            url: 'api/v1/get-tasks/',
+            url: '/api/v1/task/get/completed/',
             datatype: 'json',
             success: function(data) {
-                console.log(data);
                 this.setState({data:JSON.parse(data)});
             }.bind(this),
             error: function(data) {
@@ -37,6 +37,7 @@ export default class ToDoList extends React.Component {
         var newTask = <NewTask />;
         return (
             <ul className='toDoList'>
+                {newTask}
                 {tasks}
             </ul>
         );

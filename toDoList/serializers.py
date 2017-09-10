@@ -3,6 +3,7 @@ from models import Task
 
 
 class TaskSerializer(serializers.Serializer):
+    id = serializers.ReadOnlyField()
     begin = serializers.DateTimeField()
     end = serializers.DateTimeField()
     name = serializers.CharField()
@@ -10,4 +11,4 @@ class TaskSerializer(serializers.Serializer):
 
     class Meta:
         model = Task
-        fields = ('begin', 'end', 'name', 'is_completed')
+        fields = ('id', 'begin', 'end', 'name', 'is_completed')

@@ -9,3 +9,4 @@ class Task(models.Model):
     end = models.DateField(blank=True, null=True)
     name = models.CharField(blank=False, max_length=1024)
     is_completed = models.BooleanField(default=False)
+
