@@ -38,6 +38,11 @@ export default class ToDoList extends React.Component {
         return (
             <ul className='toDoList'>
                 {newTask}
+                {/*<li className='task'>
+                <div className='task-title'>
+                    Current Tasks
+                </div>
+                </li>*/}
                 {tasks}
             </ul>
         );

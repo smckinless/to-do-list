@@ -47,7 +47,9 @@ export default class NewTask extends React.Component {
                     <div className='task-title'>
                         New Task
                     </div>
-                    <span className="glyphicon glyphicon-minus task-glyph" aria-hidden="true" onClick={this.collapseInput} />
+                    <div className='icons'>
+                        <span className="glyphicon glyphicon-minus task-glyph" aria-hidden="true" onClick={this.collapseInput} />
+                    </div>
                     <form onSubmit={this.submitTask}>
                         <input name='name' type='text' />
                         <input type='submit' value='Submit' />
@@ -60,7 +62,9 @@ export default class NewTask extends React.Component {
                     <div className='task-title'>
                         New Task
                     </div>
-                    <span className="glyphicon glyphicon-plus task-glyph" aria-hidden="true" onClick={this.addTask} />
+                    <div className='icons'>
+                        <span className="glyphicon glyphicon-plus task-glyph" aria-hidden="true" onClick={this.addTask} />
+                    </div>
                 </div>
             );
         }

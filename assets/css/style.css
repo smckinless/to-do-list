@@ -45,4 +45,14 @@
 
 .glyphicon-remove {
     margin-left: 3%;
+    color: red;
+}
+
+.glyphicon-ok {
+    color: green;
+}
+
+.icons {
+    display: inline-block;
+    width: 20%;
 }

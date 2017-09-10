@@ -53,8 +53,10 @@ export default class Task extends React.Component {
                 <div className='task-title'>
                     {this.props.task.name}
                 </div>
-                <span className="glyphicon glyphicon-ok task-glyph" aria-hidden="true" onClick={this.completeTask}/>
-                <span className="glyphicon glyphicon-remove task-glyph" aria-hidden="true" onClick={this.removeTask} />
+                <div className='icons'>
+                    <span className="glyphicon glyphicon-ok task-glyph" aria-hidden="true" onClick={this.completeTask}/>
+                    <span className="glyphicon glyphicon-remove task-glyph" aria-hidden="true" onClick={this.removeTask} />
+                </div>
             </li>
         );
     }
